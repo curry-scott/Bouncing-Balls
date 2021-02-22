@@ -17,3 +17,9 @@
 
 ### Display
 - Starts with page is opened
+- Const
+    - Canvas
+    - Ctx
+    - Width
+    - Height
+-     

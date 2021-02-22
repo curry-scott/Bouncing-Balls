@@ -61,6 +61,7 @@ Ball.prototype.update = function() {
 
 //Where to store all the balls
 let balls = [];
+  
 
 //Adding balls <25 and size
 while (balls.length < 25) {
