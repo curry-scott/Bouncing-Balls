@@ -64,7 +64,7 @@ let balls = [];
   
 
 //Adding balls <25 and size
-while (balls.length < 25) {
+while (balls.length < 10) {
   let size = random(10,20);
   let ball = new Ball(
     random(0 + size,width - size),
@@ -92,17 +92,17 @@ function loop() {
   }
 
   Ball.prototype.collisionDetect = function() {
-      for (let j = 0; j<balls.length; j++) {
-          if (!(this === balls[j])) {
-              const dx = this.x - balls[j].x;
-              const dy = this.y - balls[j].y;
-              const distance = Math.sqrt(dx * dx + dy * dy);
-
-              if (distance < this.size + balls[j].size) {
-                  balls[j].color = this.color = 'rgb(' + random(0, 255) + ',' + random(0,255) + ',' + random(0, 255) + ')';
-              }
-          }
+    for (let j = 0; j < balls.length; j++) {
+      if (!(this === balls[j])) {
+        const dx = this.x - balls[j].x;
+        const dy = this.y - balls[j].y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+  
+        if (distance < this.size + balls[j].size) {
+          balls[j].color = this.color = 'rgb(' + random(0, 255) + ',' + random(0, 255) + ',' + random(0, 255) +')';
+        }
       }
+    }
   }
 
   loop();
