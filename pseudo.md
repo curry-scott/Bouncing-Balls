@@ -12,6 +12,8 @@
     - Colors
     - Size    
     - Moving
+        - Horizontal
+        - Vertical        
 
 ### Display
 - Starts with page is opened
