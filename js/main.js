@@ -71,7 +71,8 @@ while (balls.length < 10) {
     random(0 + size,height - size),
     random(-7,7),
     random(-7,7),
-    'rgb(' + random(0,255) + ',' + random(0,255) + ',' + random(0,255) +')',
+    // 'rgb(' + random(0,200) + ',' + random(0,200) + ',' + random(0,200) +')',
+    'rgb(100, 100, 100)',
     size
   );
 
@@ -99,7 +100,8 @@ function loop() {
         const distance = Math.sqrt(dx * dx + dy * dy);
   
         if (distance < this.size + balls[j].size) {
-          balls[j].color = this.color = 'rgb(' + random(0, 255) + ',' + random(0, 255) + ',' + random(0, 255) +')';
+          balls[j].color = this.color = 'rgb(200, 200, 200)';
+        //   balls[j].color = this.color = 'rgb(' + random(0, 255) + ',' + random(0, 255) + ',' + random(0, 255) +')';
         }
       }
     }
